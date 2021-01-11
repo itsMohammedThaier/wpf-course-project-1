@@ -24,5 +24,10 @@ namespace Course_Tutorial
         {
             InitializeComponent();
         }
+
+        private void OnApplyClicked(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(this.DescriptionBoxText.Text);
+        }
     }
 }
