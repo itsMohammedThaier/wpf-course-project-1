@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Course_Tutorial"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="750" Width="350">
     <Border Padding="10">
         
         <StackPanel>
@@ -35,13 +35,65 @@
 
                 <StackPanel Grid.Column="0" Margin="0 0 10 0">
                     <TextBlock Text="Status" />
-                    <TextBox Padding="5"/>
+                    <TextBox Padding="5" Background="#eee"/>
                 </StackPanel>
                 <StackPanel Grid.Column="1">
                     <TextBlock Text="Revision" />
-                    <TextBox Padding="5"/>
+                    <TextBox Padding="5" Background="#eee"/>
                 </StackPanel>
             </Grid>
+
+            <StackPanel>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    
+                    <StackPanel Grid.Column="0">
+                        <CheckBox Content="Assembly" Background="#eee" Margin="0 5"/>
+                        <CheckBox Content="C#" Background="#eee" Margin="0 5"/>
+                        <CheckBox Content="C++" Background="#eee" Margin="0 5"/>
+                        <CheckBox Content="C" Background="#eee" Margin="0 5"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <CheckBox Content="Java" Background="#eee" Margin="0 5"/>
+                        <CheckBox Content="Javascript" Background="#eee" Margin="0 5"/>
+                        <CheckBox Content="Ruby" Background="#eee" Margin="0 5"/>
+                        <CheckBox Content="Python" Background="#eee" Margin="0 5"/>
+                    </StackPanel>
+                </Grid>
+                <StackPanel Margin="0 10">
+                    <TextBlock Text="Length" />
+                    <TextBox Padding="5" Background="#eee"/>
+                    <TextBlock Text="Mass" />
+                    <TextBox Padding="5" Background="#eee"/>
+
+                    <TextBlock Text="Status" Margin="0 10 0 0"/>
+                    <ComboBox SelectedIndex="0" Background="#eee">
+                        <ComboBoxItem>Painted</ComboBoxItem>
+                        <ComboBoxItem>Not Painted</ComboBoxItem>
+                    </ComboBox>
+                    
+                    <TextBlock Text="Purchase information" Margin="0 10 0 0"/>
+                    <ComboBox SelectedIndex="0" Background="#eee">
+                        <ComboBoxItem>Rrubber</ComboBoxItem>
+                        <ComboBoxItem>Not Rrubber</ComboBoxItem>
+                    </ComboBox>
+
+                    <TextBlock Text="Supiler Name" Margin="0 10 0 0"/>
+                    <TextBox Padding="5" Background="#eee"/>
+                    <TextBlock Text="Supiler Code" Margin="0 10 0 0"/>
+                    <TextBox Padding="5" Background="#eee"/>
+                    
+                    <TextBlock Text="Additional Info" FontWeight="Light" Margin="0 20 0 0" FontSize="20"/>
+                    <TextBlock Text="Note" FontWeight="Bold" Margin="0 10" FontSize="15"/>
+
+                    <TextBox Padding="5"/>
+
+
+                </StackPanel>
+            </StackPanel>
         </StackPanel>
 
     </Border>
